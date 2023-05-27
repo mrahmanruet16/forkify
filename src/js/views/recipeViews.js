@@ -1,4 +1,3 @@
-import { Fraction } from 'fractional';
 import View from './View.js';
 import icons from 'url:../../img/icons.svg';
 import { updateServings } from '../model.js';
