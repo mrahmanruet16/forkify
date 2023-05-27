@@ -11,9 +11,9 @@ import addRecipeView from './views/addRecipeView.js';
 import { MODAL_CLOSE_TIME } from './config.js';
 
 // https://forkify-api.herokuapp.com/v2
-if (module.hot) {
-  module.hot.accept();
-}
+// if (module.hot) {
+//   module.hot.accept();
+// }
 
 ///////////////////////////////////////
 const controlRecipe = async function () {
@@ -92,7 +92,7 @@ const controlAddRecipe = async function (newRecipe) {
     window.history.pushState(null, '', `#${model.state.recipe.id}`);
 
     setTimeout(function () {
-      //addRecipeView.toggleWindow();
+      addRecipeView.toggleWindow();
     }, MODAL_CLOSE_TIME * 1000);
   } catch (err) {
     console.log('💥', err);
